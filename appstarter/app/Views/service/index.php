@@ -1,109 +1,359 @@
 <?= $this->extend('dashboard/index'); ?>
 
 <?= $this->section('content'); ?>
+<!-- Home -->
+	<section class="header">
 
-<!-- Page Content -->
-    <div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" title="HOME"><i class="ion-paper-airplane"></i> euro <span>travel</span></a>
+				</div> <!-- /.navbar-header -->
 
-      <!-- Page Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
-      </h1>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li class="active"><a href="services.html">services</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul> <!-- /.nav -->
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container -->
+		</nav>
+	</section> <!-- /#header -->
 
-      <!-- Project One -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Project One</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
-        </div>
-      </div>
-      <!-- /.row -->
+<!-- Section Background -->
+	<section class="section-background">
+		<div class="container">
+			<h2 class="page-header">
+				our service
+			</h2>
+			<ol class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li class="active">&nbsp;services</li>
+			</ol>
+		</div> <!-- /.container -->
+	</section> <!-- /.section-background -->
 
-      <hr>
 
-      <!-- Project Two -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Project Two</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
-        </div>
-      </div>
-      <!-- /.row -->
+	<section class="features section-wrapper">
+		<div class="container">
+			<h2 class="section-title">
+				Features
+			</h2>
+			<p class="section-subtitle">
+				Lorem Ipsum is simply dummy text of the industry.
+			</p>
+			<div class="row custom-table">
+				<div class="grid-50 table-cell">
+					<p class="features-details">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ex, fermentum vel libero eget interdum semper libero. Curabitur egestas, arcu id tempor convallis.
+					</p>
+					<ul class="features-list">
+						<li>Vestibulum pulvinar commodo malesuada.</li>
+						<li>Pellentesque id massa et ligula convallis porta.</li>
+						<li>Vivamus sed nunc sed ligula rhoncus sit amet eu elit.</li>
+						<li> Curabitur in ipsum vel ipsum vehicula congue.</li>
+					</ul>
+					<a href="#" class="btn btn-default custom-button border-radius">
+						PURCHASE
+					</a>
+				</div>
 
-      <hr>
+				<div class="grid-50 table-cell">
+					<img src="assets/images/features-bg.png" alt="" class="features-img img-responsive _pos-abs">
+				</div>
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.features -->
 
-      <!-- Project Three -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Project Three</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-          <a class="btn btn-primary" href="#">View Project</a>
-        </div>
-      </div>
-      <!-- /.row -->
 
-      <hr>
 
-      <!-- Project Four -->
-      <div class="row">
+	<section class="additional-services section-wrapper">
+		<div class="container">
+			<h2 class="section-title">
+				Additional services
+			</h2>
+			<p class="section-subtitle">
+				Lorem Ipsum is simply dummy text of the industry.
+			</p>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="custom-table">
+						<img src="assets/images/add-srvc-1.png" alt="" class="add-srvc-img">
+						<div class="add-srvc-detail">
+							<h4 class="add-srvc-heading">
+								Photography
+							</h4>
+							<p class="add-srvc">
+								Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+							</p>
+						</div> <!-- /.add-srvc-detail -->
+					</div> <!-- /.custom-table -->
+				</div> <!-- /.col-md-4 col-sm-6 -->
 
-        <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Project Four</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">View Project</a>
-        </div>
-      </div>
-      <!-- /.row -->
+				<div class="col-md-4 col-sm-6">
+					<div class="custom-table">
+						<img src="assets/images/add-srvc-2.png" alt="" class="add-srvc-img">
+						<div class="add-srvc-detail">
+							<h4 class="add-srvc-heading">
+								Cycling
+							</h4>
+							<p class="add-srvc">
+								Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+							</p>
+						</div> <!-- /.add-srvc-detail -->
+					</div> <!-- /.custom-table -->
+				</div> <!-- /.col-md-4 col-sm-6 -->
 
-      <hr>
+				<div class="col-md-4 col-sm-6">
+					<div class="custom-table">
+						<img src="assets/images/add-srvc-3.png" alt="" class="add-srvc-img">
+						<div class="add-srvc-detail">
+							<h4 class="add-srvc-heading">
+								Waking
+							</h4>
+							<p class="add-srvc">
+								Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+							</p>
+						</div> <!-- /.add-srvc-detail -->
+					</div> <!-- /.custom-table -->
+				</div> <!-- /.col-md-4 col-sm-6 -->
 
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
+				<div class="col-md-4 col-sm-6">
+					<div class="custom-table">
+						<img src="assets/images/add-srvc-4.png" alt="" class="add-srvc-img">
+						<div class="add-srvc-detail">
+							<h4 class="add-srvc-heading">
+								Skiing
+							</h4>
+							<p class="add-srvc">
+								Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+							</p>
+						</div> <!-- /.add-srvc-detail -->
+					</div> <!-- /.custom-table -->
+				</div> <!-- /.col-md-4 col-sm-6 -->
 
-    </div>
-    <!-- /.container -->
-    <?= $this->endSection(); ?>
+				<div class="col-md-4 col-sm-6">
+					<div class="custom-table">
+						<img src="assets/images/add-srvc-5.png" alt="" class="add-srvc-img">
+						<div class="add-srvc-detail">
+							<h4 class="add-srvc-heading">
+								Sea beach
+							</h4>
+							<p class="add-srvc">
+								Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+							</p>
+						</div> <!-- /.add-srvc-detail -->
+					</div> <!-- /.custom-table -->
+				</div> <!-- /.col-md-4 col-sm-6 -->
+
+				<div class="col-md-4 col-sm-6">
+					<div class="custom-table">
+						<img src="assets/images/add-srvc-6.png" alt="" class="add-srvc-img">
+						<div class="add-srvc-detail">
+							<h4 class="add-srvc-heading">
+								Hill tracking
+							</h4>
+							<p class="add-srvc">
+								Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+							</p>
+						</div> <!-- /.add-srvc-detail -->
+					</div> <!-- /.custom-table -->
+				</div> <!-- /.col-md-4 col-sm-6 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.Additional-services -->
+
+
+	<section class="section-wrapper services-owl">
+		<div class="container">
+			<div class="owl-carousel services-owl-carousel row">
+				<div class="item col-sm-8 col-sm-offset-2">
+					<div class="item-name">
+						David Martin
+					</div>
+					<p class="item-detail">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos omnis, architecto ipsam laudantium corporis eveniet blanditiis eaque ab ex eum, provident culpa tenetur adipisci libero aliquid quia dolores deleniti illo.
+					</p>
+				</div> <!-- /.item -->
+
+				<div class="item col-sm-8 col-sm-offset-2">
+					<div class="item-name">
+						David Martin
+					</div>
+					<p class="item-detail">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos omnis, architecto ipsam laudantium corporis eveniet blanditiis eaque ab ex eum, provident culpa tenetur adipisci libero aliquid quia dolores deleniti illo.
+					</p>
+				</div> <!-- /.item -->
+
+				<div class="item col-sm-8 col-sm-offset-2">
+					<div class="item-name">
+						David Martin
+					</div>
+					<p class="item-detail">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos omnis, architecto ipsam laudantium corporis eveniet blanditiis eaque ab ex eum, provident culpa tenetur adipisci libero aliquid quia dolores deleniti illo.
+					</p>
+				</div> <!-- /.item -->
+			</div> <!-- /.services-owl-carousel -->
+		</div> <!-- /.container -->
+	</section> <!-- /.services-owl -->
+
+
+	<div class="section-wrapper sponsor">
+		<div class="container">
+			<div class="owl-carousel sponsor-carousel">
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+			</div> <!-- /.owl-carousel -->
+		</div> <!-- /.container -->
+	</div> <!-- /.sponsor -->
+
+	<div class="subscribe section-wrapper">
+		<a class="brand-logo" href="index.html" title="HOME"><i class="ion-paper-airplane"></i> Euro <span>Travel</span></a>
+		<p class="subscribe-now">
+			Subscribe to our Newsletter
+		</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+					<div class="input-group">
+						<input type="email" class="form-control border-radius" placeholder="Email address">
+						<span class="input-group-btn">
+							<button class="btn btn-default border-radius custom-sub-btn" type="button">DONE</button>
+						</span>
+					</div><!-- /input-group -->
+				</div>
+			</div>
+		</div>
+
+
+
+		<ul class="social-icon">
+			<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+			<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+			<li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li>
+			<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+		</ul>
+	</div> <!-- /.subscribe -->
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="text-left">
+						&copy; Copyright Euro Travels
+					</div>
+				</div>
+				<div class="col-xs-4">
+					Theme by <a href="http://www.themewagon.com">THEMEWAGON</a>
+				</div>
+				<div class="col-xs-4">
+					<!-- <div class="top">
+						<a href="#header">
+							<i class="ion-arrow-up-b"></i>
+						</a>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<?= $this->endSection(); ?>
