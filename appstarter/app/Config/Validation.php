@@ -12,13 +12,19 @@ class Validation
 	 *
 	 * @var array
 	 */
-	public $ruleSets = [
+	/*public $ruleSets = [
 		\CodeIgniter\Validation\Rules::class,
 		\CodeIgniter\Validation\FormatRules::class,
 		\CodeIgniter\Validation\FileRules::class,
 		\CodeIgniter\Validation\CreditCardRules::class,
-	];
-
+	];*/
+	public $ruleSets = [
+     \CodeIgniter\Validation\Rules::class,
+     \CodeIgniter\Validation\FormatRules::class,
+     \CodeIgniter\Validation\FileRules::class,
+     \CodeIgniter\Validation\CreditCardRules::class,
+     \Myth\Auth\Authentication\Passwords\ValidationRules::class,
+ ];
 	/**
 	 * Specifies the views that are used to display the
 	 * errors.
