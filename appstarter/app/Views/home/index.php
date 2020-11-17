@@ -16,7 +16,7 @@
                               it leaves you speecless, then turns your into a storyteller.
                           </p>
                           <button class="btn custom-btn">
-                              book now
+                              <a href="<?= base_url('service/booking') ?>">book now</a>
                           </button>
                       </div>
                   </div>
@@ -42,10 +42,10 @@
 <!-- Find a Tour -->
 <section class="tour section-wrapper container">
   <h2 class="section-title">
-    Lets Book Now
+    Lets Check Your Date
   </h2>
   <p class="section-subtitle">
-    Where would you like to go?
+    When
   </p>
   <div class="row">
 

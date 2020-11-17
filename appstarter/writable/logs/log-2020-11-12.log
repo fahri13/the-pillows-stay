@@ -1,0 +1,57 @@
+CRITICAL - 2020-11-12 01:53:55 --> syntax error, unexpected '__construct' (T_STRING), expecting variable (T_VARIABLE)
+#0 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute()
+#1 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/the-pillows-stay/appstarter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2020-11-12 01:55:08 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /opt/lampp/htdocs/the-pillows-stay/appstarter/app/Controllers/Service.php(10): spl_autoload_call()
+#4 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(890): App\Controllers\Service->__construct()
+#5 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/the-pillows-stay/appstarter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-11-12 02:00:38 --> syntax error, unexpected '(', expecting ';'
+#0 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#1 /opt/lampp/htdocs/the-pillows-stay/appstarter/app/Controllers/Service.php(23): view()
+#2 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Service->booking()
+#3 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /opt/lampp/htdocs/the-pillows-stay/appstarter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#7 {main}
+CRITICAL - 2020-11-12 02:01:27 --> syntax error, unexpected '(', expecting ';'
+#0 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#1 /opt/lampp/htdocs/the-pillows-stay/appstarter/app/Controllers/Service.php(23): view()
+#2 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Service->booking()
+#3 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /opt/lampp/htdocs/the-pillows-stay/appstarter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#7 {main}
+CRITICAL - 2020-11-12 02:01:29 --> syntax error, unexpected '(', expecting ';'
+#0 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#1 /opt/lampp/htdocs/the-pillows-stay/appstarter/app/Controllers/Service.php(23): view()
+#2 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Service->booking()
+#3 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /opt/lampp/htdocs/the-pillows-stay/appstarter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#7 {main}
+CRITICAL - 2020-11-12 07:01:19 --> Undefined variable: pkamar
+#0 /opt/lampp/htdocs/the-pillows-stay/appstarter/app/Views/service/booking.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/the-pillows-stay/appstarter/app/Controllers/Service.php(24): view()
+#4 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Service->booking()
+#5 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/the-pillows-stay/appstarter/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/the-pillows-stay/appstarter/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}

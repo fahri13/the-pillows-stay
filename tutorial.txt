@@ -1,0 +1,9 @@
+install composer terlebih dahulu
+
+cara menjalankan ci4 : jalankan perintah 'php spark serve' di bash terminal
+
+cara nambahin database : jalankan perintah 'php spark migrate'
+
+apabila database tidak bisa koneksi : buka app/config/Database.php, edit hostname '127.0.0.1' jadi 'localhost' atau sebaliknya.
+
+kalo gabisa migrate, import file db_the_pillows_stay.sql

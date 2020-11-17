@@ -29,14 +29,19 @@
 
 
       <?php if(logged_in()) : ?>
+
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?= base_url('') ?>">Profil</a><br>
+          <a class="dropdown-item" href="<?= base_url('') ?>">Pesanan Saya</a><br>
           <a class="dropdown-item" href="<?= base_url('/logout') ?>">Log Out</a>
         </div>
+      </li>
+      <li>
       <?php else : ?>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="<?= base_url('/login') ?>">SignIn</a>
           </div>
+        </li>
         <?php endif; ?>
 
 

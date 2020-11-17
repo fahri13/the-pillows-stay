@@ -2,33 +2,6 @@
 
 <?= $this->section('content'); ?>
 <!-- Home -->
-	<section class="header">
-
-		<nav class="navbar navbar-default">
-			<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html" title="HOME"><i class="ion-paper-airplane"></i> euro <span>travel</span></a>
-				</div> <!-- /.navbar-header -->
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">about</a></li>
-						<li class="active"><a href="services.html">services</a></li>
-						<li><a href="contact.html">contact</a></li>
-					</ul> <!-- /.nav -->
-			    </div><!-- /.navbar-collapse -->
-		  	</div><!-- /.container -->
-		</nav>
-	</section> <!-- /#header -->
 
 <!-- Section Background -->
 	<section class="section-background">
@@ -43,7 +16,73 @@
 		</div> <!-- /.container -->
 	</section> <!-- /.section-background -->
 
+	<!-- Our Blazzing offers -->
+	<section class="offer section-wrapper">
+	  <div class="container">
+	    <h2 class="section-title">
+	      Our Blazzing offers
+	    </h2>
+	    <p class="section-subtitle">
+	      Lorem Ipsum is simply dummy text of the industry.
+	    </p>
+	    <div class="row">
+	      <div class="col-sm-3 col-xs-6">
+	        <div class="offer-item">
+	          <div class="icon" >
+	            <i class="ion-ios-home"></i>
+	          </div>
+	          <h3>
+	           <a href="<?= base_url('service/booking') ?>" >Penginapan</a>
+	          </h3>
+	          <p>
+	            Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
+	          </p>
+	        </div>
+	      </div> <!-- /.col-md-3 -->
 
+	      <div class="col-sm-3 col-xs-6">
+	        <div class="offer-item">
+	          <div class="icon">
+	            <i class="ion-android-bus"></i>
+	          </div>
+	          <h3>
+	            Transportasi
+	          </h3>
+	          <p>
+	            Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
+	          </p>
+	        </div>
+	      </div> <!-- /.col-md-3 -->
+
+	      <div class="col-sm-3 col-xs-6">
+	        <div class="offer-item">
+	          <div class="icon">
+	            <i class="ion-ios-locked"></i>
+	          </div>
+	          <h3>
+	            Fasilitas Lainnya
+	          </h3>
+	          <p>
+	            Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
+	          </p>
+	        </div>
+	      </div> <!-- /.col-md-3 -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="offer-item">
+						<div class="icon">
+							<i class="ion-social-euro"></i>
+						</div>
+						<h3>
+							Pembayaran
+						</h3>
+						<p>
+							Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
+						</p>
+					</div>
+				</div> <!-- /.col-md-3 -->
+	    </div> <!-- /.row -->
+	  </div> <!-- /.container -->
+	</section> <!-- /.offer -->
 	<section class="features section-wrapper">
 		<div class="container">
 			<h2 class="section-title">
