@@ -2,9 +2,9 @@
 
 use CodeIgniter\Model;
 
-class Kamar_model extends Model
+class Tiket_model extends Model
 {
-    protected $table        = 'pemesanan_kamar';
+    protected $table        = 'sewa_penjemputan';
  //   protected $DBGroup      = 'db_the_pillows_stay';
 //    protected $useTimetamps = True;
 
@@ -14,7 +14,7 @@ class Kamar_model extends Model
 //    protected $returnType     = 'array';
 //    protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['nama', 'check_in', 'check_out', 'tipe_kamar'];
+    protected $allowedFields = ['nama_tamu', 'stasiun_awal', 'stasiun_tujuan', 'tanggal_berangkat', 'jumlah_penumpang', 'kelas_kereta'];
 
 //    protected $useTimestamps = false;
 //    protected $createdField  = 'created_at';
@@ -28,18 +28,18 @@ class Kamar_model extends Model
 public function getProduct($id = false)
     {
         if($id === false){
-            return $this->table('pemesanan_kamar')
+            return $this->table('pemesanan_tiket')
                         ->get()
                         ->getResultArray();
         } else {
-            return $this->table('pemesanan_kamar')
-                        ->where('pemesanan_id', $id)
+            return $this->table('pemesanan_tiket')
+                        ->where('tiket_id', $id)
                         ->get()
                         ->getRowArray();
         }   
     } 
 
-public function pesankamar($data)
+public function belitiket($data)
 {
     return $this->db->table($this->table)->insert($data);
 } 

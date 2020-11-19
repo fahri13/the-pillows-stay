@@ -2,9 +2,9 @@
 
 use CodeIgniter\Model;
 
-class Kamar_model extends Model
+class Kendaraan_model extends Model
 {
-    protected $table        = 'pemesanan_kamar';
+    protected $table        = 'sewa_kendaraan';
  //   protected $DBGroup      = 'db_the_pillows_stay';
 //    protected $useTimetamps = True;
 
@@ -14,7 +14,7 @@ class Kamar_model extends Model
 //    protected $returnType     = 'array';
 //    protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['nama', 'check_in', 'check_out', 'tipe_kamar'];
+    protected $allowedFields = ['kendaraan_nama', 'jumlah_kendaraan', 'waktu_sewa'];
 
 //    protected $useTimestamps = false;
 //    protected $createdField  = 'created_at';
@@ -28,18 +28,18 @@ class Kamar_model extends Model
 public function getProduct($id = false)
     {
         if($id === false){
-            return $this->table('pemesanan_kamar')
+            return $this->table('sewa_kendaraan')
                         ->get()
                         ->getResultArray();
         } else {
-            return $this->table('pemesanan_kamar')
-                        ->where('pemesanan_id', $id)
+            return $this->table('sewa_kendaraan')
+                        ->where('kendaraan_id', $id)
                         ->get()
                         ->getRowArray();
         }   
     } 
 
-public function pesankamar($data)
+public function pesan($data)
 {
     return $this->db->table($this->table)->insert($data);
 } 

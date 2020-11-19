@@ -10,13 +10,13 @@
                   <div class="intro container">
                       <div class="inner-intro">
                           <h1 class="header-title">
-                              <span>traveling</span> always "good idea"
+                              <span>Liburan</span> di tempat kami adalah "Pilihan Terbaik"
                           </h1>
                           <p class="header-sub-title">
-                              it leaves you speecless, then turns your into a storyteller.
+                              Kami menyediakan berbagai macam fasilitas penginapan
                           </p>
                           <button class="btn custom-btn">
-                              <a href="<?= base_url('service/booking') ?>">book now</a>
+                              <a href="<?= base_url('service/sewakamar') ?>">Pesan Sekarang</a>
                           </button>
                       </div>
                   </div>
@@ -31,7 +31,7 @@
                               it leaves you speecless, then turns your into a storyteller.
                           </p>
                           <button class="btn custom-btn">
-                              book now
+                              Pesan Sekarang
                           </button>
                       </div>
                   </div>
@@ -42,10 +42,10 @@
 <!-- Find a Tour -->
 <section class="tour section-wrapper container">
   <h2 class="section-title">
-    Lets Check Your Date
+    Yuk Cek Tanggal Liburan Kalian
   </h2>
   <p class="section-subtitle">
-    When
+    Nikmati Liburan Kalian
   </p>
   <div class="row">
 
@@ -71,11 +71,10 @@
     <div class="col-md-3 col-sm-6">
       <form role="form" class="form-dropdown">
         <div class="form-group">
-          <label class="text-dark" for="sel1">Select list (select one):</label>
+          <label class="text-dark" for="sel1">Tipe Kamar:</label>
           <select class="form-control border-radius" id="sel1">
-            <option>Jumlah Tamu</option>
-            <option>2</option>
-            <option>4</option>
+            <option>Regular</option>
+            <option>VIP</option>
           </select>
         </div>
       </form>
@@ -83,131 +82,11 @@
 
     <div class="col-md-3 col-sm-6">
       <div class="btn btn-default border-radius custom-button">
-        Check Availability
+        Cek Kamar
       </div>
     </div>
   </div>
 </section> <!-- /.tour -->
-
-
-<!-- Our Blazzing offers -->
-<section class="offer section-wrapper">
-  <div class="container">
-    <h2 class="section-title">
-      Our Blazzing offers
-    </h2>
-    <p class="section-subtitle">
-      Lorem Ipsum is simply dummy text of the industry.
-    </p>
-    <div class="row">
-      <div class="col-sm-3 col-xs-6">
-        <div class="offer-item">
-          <div class="icon">
-            <i class="ion-social-euro"></i>
-          </div>
-          <h3>
-            Affordable Pricing
-          </h3>
-          <p>
-            Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
-          </p>
-        </div>
-      </div> <!-- /.col-md-3 -->
-
-      <div class="col-sm-3 col-xs-6">
-        <div class="offer-item">
-          <div class="icon">
-            <i class="ion-ios-home"></i>
-          </div>
-          <h3>
-            High class Hotels
-          </h3>
-          <p>
-            Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
-          </p>
-        </div>
-      </div> <!-- /.col-md-3 -->
-
-      <div class="col-sm-3 col-xs-6">
-        <div class="offer-item">
-          <div class="icon">
-            <i class="ion-android-bus"></i>
-          </div>
-          <h3>
-            Luxury Transport
-          </h3>
-          <p>
-            Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
-          </p>
-        </div>
-      </div> <!-- /.col-md-3 -->
-
-      <div class="col-sm-3 col-xs-6">
-        <div class="offer-item">
-          <div class="icon">
-            <i class="ion-ios-locked"></i>
-          </div>
-          <h3>
-            Highest Security
-          </h3>
-          <p>
-            Class aptent taciti sociosutn tora torquent conub nost reptos himenaeos.
-          </p>
-        </div>
-      </div> <!-- /.col-md-3 -->
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</section> <!-- /.offer -->
-
-
-<!-- Top place to visit -->
-<section class="visit section-wrapper">
-  <div class="container">
-    <h2 class="section-title">
-      Top place to visit
-    </h2>
-    <p class="section-subtitle">
-      Lorem Ipsum is simply dummy text of the industry.
-    </p>
-
-    <div class="owl-carousel visit-carousel" id="">
-      <div class="item">
-        <img src="assets/images/visit-1.png" alt="visit-image" class="img-responsive visit-item">
-      </div>
-      <div class="item">
-        <img src="assets/images/visit-2.png" alt="visit-image" class="img-responsive visit-item">
-      </div>
-      <div class="item">
-        <img src="assets/images/visit-3.png" alt="visit-image" class="img-responsive visit-item">
-      </div>
-      <div class="item">
-        <img src="assets/images/visit-1.png" alt="visit-image" class="img-responsive visit-item">
-      </div>
-      <div class="item">
-        <img src="assets/images/visit-2.png" alt="visit-image" class="img-responsive visit-item">
-      </div>
-      <div class="item">
-        <img src="assets/images/visit-3.png" alt="visit-image" class="img-responsive visit-item">
-      </div>
-    </div>
-  </div> <!-- /.container -->
-</section> <!-- /.visit -->
-
-<div class="offer-cta">
-<div class="container">
-  <div class="offering">
-    <div class="percent">
-      <span>15%</span> off
-    </div>
-    <div class="FTour">
-      for <strong>Family Tour</strong>
-    </div>
-    <a class="btn btn-default price-btn" href="#">
-      see our price
-    </a>
-  </div> <!-- /.offering -->
-</div> <!-- /.container -->
-</div> <!-- /.offer-cta -->
 
 <section class="additional-services section-wrapper">
   <div class="container">
@@ -305,103 +184,6 @@
   </div> <!-- /.container -->
 </section> <!-- /.Additional-services -->
 
-
-<div class="section-wrapper sponsor">
-  <div class="container">
-    <div class="owl-carousel sponsor-carousel">
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
-        </a>
-      </div>
-    </div> <!-- /.owl-carousel -->
-  </div> <!-- /.container -->
-</div> <!-- /.sponsor -->
 
 <div class="subscribe section-wrapper">
   <a class="brand-logo" href="index.html" title="HOME"><i class="ion-paper-airplane"></i> Euro <span>Travel</span></a>

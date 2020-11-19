@@ -31,15 +31,26 @@
       <?php if(logged_in()) : ?>
 
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<?= base_url('') ?>">Profil</a><br>
-          <a class="dropdown-item" href="<?= base_url('') ?>">Pesanan Saya</a><br>
-          <a class="dropdown-item" href="<?= base_url('/logout') ?>">Log Out</a>
+      <ul class="nav flex-column">
+  <li class="nav-item">
+  <a class="dropdown-item" href="<?= base_url('profile/index') ?>">Profil</a>
+  </li>
+  <li class="nav-item">
+  <a class="dropdown-item" href="<?= base_url('profile/pesanan') ?>">Pesanan Saya</a>
+  </li>
+  <li class="nav-item">
+  <a class="dropdown-item" href="<?= base_url('/logout') ?>">Log Out</a>
+  </li>
+          </ul>
         </div>
       </li>
       <li>
       <?php else : ?>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <ul class="nav flex-column">
+        <li class="nav-item">
             <a class="dropdown-item" href="<?= base_url('/login') ?>">SignIn</a>
+          </li>
           </div>
         </li>
         <?php endif; ?>
