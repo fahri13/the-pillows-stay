@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class Tiket_model extends Model
+class Penjemputan_model extends Model
 {
     protected $table        = 'sewa_penjemputan';
  //   protected $DBGroup      = 'db_the_pillows_stay';
@@ -14,7 +14,7 @@ class Tiket_model extends Model
 //    protected $returnType     = 'array';
 //    protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['nama_tamu', 'stasiun_awal', 'stasiun_tujuan', 'tanggal_berangkat', 'jumlah_penumpang', 'kelas_kereta'];
+    protected $allowedFields = ['nama_tamu', 'jumlah_tamu', 'lokasi_penjemputan'];
 
 //    protected $useTimestamps = false;
 //    protected $createdField  = 'created_at';
@@ -28,18 +28,18 @@ class Tiket_model extends Model
 public function getProduct($id = false)
     {
         if($id === false){
-            return $this->table('pemesanan_tiket')
+            return $this->table('sewa_penjemputan')
                         ->get()
                         ->getResultArray();
         } else {
-            return $this->table('pemesanan_tiket')
-                        ->where('tiket_id', $id)
+            return $this->table('sewa_penjemputan')
+                        ->where('penjemputan_id', $id)
                         ->get()
                         ->getRowArray();
         }   
     } 
 
-public function belitiket($data)
+public function sewapenjemputan($data)
 {
     return $this->db->table($this->table)->insert($data);
 } 

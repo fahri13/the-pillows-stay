@@ -25,10 +25,10 @@
                   <div class="intro">
                       <div class="inner-intro">
                           <h1 class="header-title">
-                              to <span>travel</span> is to <span>live</span>
+                              "to <span>travel</span> is to <span>live"</span>
                           </h1>
                           <p class="header-sub-title">
-                              it leaves you speecless, then turns your into a storyteller.
+                              berhenti sejenak dari kesibukan keseharian, dan nikmati liburan dengan nyaman.
                           </p>
                           <button class="btn custom-btn">
                               Pesan Sekarang
@@ -91,10 +91,10 @@
 <section class="additional-services section-wrapper">
   <div class="container">
     <h2 class="section-title">
-      Additional services
+      Fasilitas dan Pelayanan Kami
     </h2>
     <p class="section-subtitle">
-      Lorem Ipsum is simply dummy text of the industry.
+      Kami menyediakan berbagai macam fasilitas dan layanan untuk membuat kalian nyaman.
     </p>
     <div class="row">
       <div class="col-md-4 col-sm-6">
@@ -102,10 +102,10 @@
           <img src="assets/images/add-srvc-1.png" alt="" class="add-srvc-img">
           <div class="add-srvc-detail">
             <h4 class="add-srvc-heading">
-              Photography
+              Penginapan
             </h4>
             <p class="add-srvc">
-              Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+              Penginapan kami memiliki pelayanan yang terbaik dengan menawarkan fasilitas penginapan yang terbaik.
             </p>
           </div> <!-- /.add-srvc-detail -->
         </div> <!-- /.custom-table -->
@@ -116,10 +116,10 @@
           <img src="assets/images/add-srvc-2.png" alt="" class="add-srvc-img">
           <div class="add-srvc-detail">
             <h4 class="add-srvc-heading">
-              Cycling
+              Penjemputan
             </h4>
             <p class="add-srvc">
-              Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+              Kami menyediakan layanan penjemputan tamu dari stasiun terdekat.
             </p>
           </div> <!-- /.add-srvc-detail -->
         </div> <!-- /.custom-table -->
@@ -130,10 +130,10 @@
           <img src="assets/images/add-srvc-3.png" alt="" class="add-srvc-img">
           <div class="add-srvc-detail">
             <h4 class="add-srvc-heading">
-              Waking
+              Pembelian Tiket
             </h4>
             <p class="add-srvc">
-              Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+              Kami juga melayani pembelian tiket kereta api secara online dari stasiun kereta api DKI Jakarta dan Bandung. 
             </p>
           </div> <!-- /.add-srvc-detail -->
         </div> <!-- /.custom-table -->
@@ -144,10 +144,10 @@
           <img src="assets/images/add-srvc-4.png" alt="" class="add-srvc-img">
           <div class="add-srvc-detail">
             <h4 class="add-srvc-heading">
-              Skiing
+              Tour Guide
             </h4>
             <p class="add-srvc">
-              Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+              Untuk tamu yang baru pertama kali berkunjung ke penginapan kami, kami menawarkan tour guide sebagai pemandu liburan ketempat wisata disekitar penginapan.
             </p>
           </div> <!-- /.add-srvc-detail -->
         </div> <!-- /.custom-table -->
@@ -158,10 +158,10 @@
           <img src="assets/images/add-srvc-5.png" alt="" class="add-srvc-img">
           <div class="add-srvc-detail">
             <h4 class="add-srvc-heading">
-              Sea beach
+              Kendaraan
             </h4>
             <p class="add-srvc">
-              Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+              Untuk yang ingin jalan - jalan lebih jauh, kami menyediakan fasilitas penyewaan kendaraan beroda empat.
             </p>
           </div> <!-- /.add-srvc-detail -->
         </div> <!-- /.custom-table -->
@@ -172,10 +172,10 @@
           <img src="assets/images/add-srvc-6.png" alt="" class="add-srvc-img">
           <div class="add-srvc-detail">
             <h4 class="add-srvc-heading">
-              Hill tracking
+              Alat Pemanggang
             </h4>
             <p class="add-srvc">
-              Etiam pharetra ut ante eget ehy efficitur. Nullam quis felis at nunc vehicula sollicitudin euliquam quis felis atblan dit.
+              Berkempul dengan kerabat dan kawan adalah yang terbaik. Kami menawarkan penyewaan alat panggang untuk menikmati hidangan bersama.
             </p>
           </div> <!-- /.add-srvc-detail -->
         </div> <!-- /.custom-table -->
@@ -185,55 +185,5 @@
 </section> <!-- /.Additional-services -->
 
 
-<div class="subscribe section-wrapper">
-  <a class="brand-logo" href="index.html" title="HOME"><i class="ion-paper-airplane"></i> Euro <span>Travel</span></a>
-  <p class="subscribe-now">
-    Subscribe to our Newsletter
-  </p>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-        <div class="input-group">
-          <input type="email" class="form-control border-radius" placeholder="Email address">
-          <span class="input-group-btn">
-            <button class="btn btn-default border-radius custom-sub-btn" type="button">DONE</button>
-          </span>
-        </div><!-- /input-group -->
-      </div>
-    </div>
-  </div>
-
-
-
-  <ul class="social-icon">
-    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-    <li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li>
-    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-  </ul>
-</div> <!-- /.subscribe -->
-
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4">
-        <div class="text-left">
-          &copy; Copyright Euro Travels
-        </div>
-      </div>
-      <div class="col-xs-4">
-        Theme by <a href="http://www.themewagon.com">THEMEWAGON</a>
-      </div>
-      <div class="col-xs-4">
-        <div class="top">
-          <a href="#header">
-            <i class="ion-arrow-up-b"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <?= $this->endSection(); ?>

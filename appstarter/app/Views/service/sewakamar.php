@@ -32,7 +32,7 @@
         <option>Regular</option>
       </select>
     </div>
-  <button type="submit" class="btn btn-primary">Book Now</button>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Book Now</button>
   </div>
 </form>
 

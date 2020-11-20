@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 15, 2020 at 11:45 AM
+-- Generation Time: Nov 20, 2020 at 08:14 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -40,7 +40,7 @@ CREATE TABLE `auth_activation_attempts` (
 --
 
 INSERT INTO `auth_activation_attempts` (`id`, `ip_address`, `user_agent`, `token`, `created_at`) VALUES
-(1, '::1', 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0', '1fdcbf7a73da97577ef087f194f13772', '2020-11-09 22:21:05');
+(1, '::1', 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0', '45b7fd1f635fc5b8741a5401a2e5e30a', '2020-11-18 02:13:37');
 
 -- --------------------------------------------------------
 
@@ -96,18 +96,16 @@ CREATE TABLE `auth_logins` (
 --
 
 INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `success`) VALUES
-(1, '::1', 'noname13183597@gmail.com', NULL, '2020-11-08 01:14:07', 0),
-(2, '::1', 'noname13183597@gmail.com', NULL, '2020-11-09 21:57:50', 0),
-(3, '::1', 'noname13183597@gmail.com', NULL, '2020-11-09 21:58:09', 0),
-(4, '::1', 'berkahungu@gmail.com', NULL, '2020-11-09 21:59:25', 0),
-(5, '::1', 'noname13183597@gmail.com', 1, '2020-11-09 22:21:20', 1),
-(6, '::1', 'noname13183597@gmail.com', 1, '2020-11-10 04:59:51', 1),
-(7, '::1', 'noname13183597@gmail.com', 1, '2020-11-11 01:06:39', 1),
-(8, '::1', 'noname13183597@gmail.com', 1, '2020-11-11 20:43:11', 1),
-(9, '::1', 'noname13183597@gmail.com', 1, '2020-11-12 01:55:08', 1),
-(10, '::1', 'noname13183597@gmail.com', 1, '2020-11-12 07:01:15', 1),
-(11, '::1', 'noname13183597@gmail.com', 1, '2020-11-12 18:41:18', 1),
-(12, '::1', 'noname13183597@gmail.com', 1, '2020-11-15 00:51:24', 1);
+(1, '::1', 'noname13183597@gmail.com', NULL, '2020-11-18 02:12:09', 0),
+(2, '::1', 'noname13183597@gmail.com', 1, '2020-11-18 02:13:51', 1),
+(3, '::1', 'noname13183597@gmail.com', 1, '2020-11-18 22:00:16', 1),
+(4, '::1', 'noname13183597@gmail.com', 1, '2020-11-19 00:37:54', 1),
+(5, '::1', 'noname13183597@gmail.com', 1, '2020-11-19 02:19:31', 1),
+(6, '::1', 'noname13183597@gmail.com', 1, '2020-11-19 04:41:43', 1),
+(7, '::1', 'noname13183597@gmail.com', 1, '2020-11-19 09:14:39', 1),
+(8, '::1', 'noname13183597@gmail.com', NULL, '2020-11-19 20:12:52', 0),
+(9, '::1', 'noname13183597@gmail.com', 1, '2020-11-19 20:12:59', 1),
+(10, '::1', 'noname13183597@gmail.com', 1, '2020-11-20 00:01:49', 1);
 
 -- --------------------------------------------------------
 
@@ -182,7 +180,11 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
-(1, '2017-11-20-223112', 'Myth\\Auth\\Database\\Migrations\\CreateAuthTables', 'default', 'Myth\\Auth', 1604819590, 1);
+(1, '2017-11-20-223112', 'Myth\\Auth\\Database\\Migrations\\CreateAuthTables', 'default', 'Myth\\Auth', 1605687070, 1),
+(2, '2020-11-15-104003', 'App\\Database\\Migrations\\PemesananKamar', 'default', 'App', 1605687095, 2),
+(3, '2020-11-18-081551', 'App\\Database\\Migrations\\SewaKendaraan', 'default', 'App', 1605687827, 3),
+(4, '2020-11-19-150358', 'App\\Database\\Migrations\\PemesananTiket', 'default', 'App', 1605800091, 4),
+(5, '2020-11-20-022919', 'App\\Database\\Migrations\\SewaPenjemputan', 'default', 'App', 1605852691, 5);
 
 -- --------------------------------------------------------
 
@@ -191,21 +193,66 @@ INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`
 --
 
 CREATE TABLE `pemesanan_kamar` (
-  `pemesanan_id` int(11) NOT NULL,
-  `nama` varchar(55) NOT NULL,
-  `check_in` varchar(55) NOT NULL,
-  `check_out` varchar(55) NOT NULL,
-  `tipe_kamar` varchar(111) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `pemesanan_id` int(11) UNSIGNED NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `check_in` varchar(100) NOT NULL,
+  `check_out` varchar(100) NOT NULL,
+  `tipe_kamar` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `pemesanan_kamar`
 --
 
 INSERT INTO `pemesanan_kamar` (`pemesanan_id`, `nama`, `check_in`, `check_out`, `tipe_kamar`) VALUES
-(1, 'ffff', '2020-11-10', '2020-11-17', 'Regular'),
-(2, '', '', '', 'Tipe Kamar'),
-(3, '', '', '', 'Tipe Kamar');
+(1, 'fahri', '2020-11-02', '2020-11-05', 'Regular'),
+(2, 'asdasd', '2020-11-09', '2020-11-17', 'Regular'),
+(3, 'qww', '2020-11-03', '2020-11-12', 'Regular'),
+(4, '', '', '', 'VIP');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pemesanan_tiket`
+--
+
+CREATE TABLE `pemesanan_tiket` (
+  `tiket_id` int(11) UNSIGNED NOT NULL,
+  `nama_penumpang` varchar(100) NOT NULL,
+  `stasiun_awal` varchar(100) NOT NULL,
+  `stasiun_tujuan` varchar(100) NOT NULL,
+  `tanggal_berangkat` varchar(100) NOT NULL,
+  `jumlah_penumpang` varchar(100) NOT NULL,
+  `kelas_kereta` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pemesanan_tiket`
+--
+
+INSERT INTO `pemesanan_tiket` (`tiket_id`, `nama_penumpang`, `stasiun_awal`, `stasiun_tujuan`, `tanggal_berangkat`, `jumlah_penumpang`, `kelas_kereta`) VALUES
+(1, '', 'DKI Jakarta', 'Lempuyangan(LPN)', '', '', 'Ekonomi'),
+(2, 'ssss', 'Manggarai(MRI)', 'Lempuyangan(LPN)', '2020-11-10', '5', 'Eksekutif');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sewa_penjemputan`
+--
+
+CREATE TABLE `sewa_penjemputan` (
+  `penjemputan_id` int(11) UNSIGNED NOT NULL,
+  `nama_tamu` varchar(100) NOT NULL,
+  `jumlah_tamu` varchar(100) NOT NULL,
+  `lokasi_penjemputan` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sewa_penjemputan`
+--
+
+INSERT INTO `sewa_penjemputan` (`penjemputan_id`, `nama_tamu`, `jumlah_tamu`, `lokasi_penjemputan`) VALUES
+(1, 'dadad', '5', 'St. Lempuyangan(LPN)');
 
 -- --------------------------------------------------------
 
@@ -236,7 +283,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `username`, `password_hash`, `reset_hash`, `reset_at`, `reset_expires`, `activate_hash`, `status`, `status_message`, `active`, `force_pass_reset`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'noname13183597@gmail.com', '1703015073', '$2y$10$TNJ24l0Tfd6aua1Map6WG.oCyLJw5kf/BrFNRYaUFEt09.J0vQY2K', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2020-11-09 22:19:53', '2020-11-09 22:21:07', NULL);
+(1, 'noname13183597@gmail.com', 'tuanm', '$2y$10$h7o1OvFyz6ickmG73tIjMOdn.U3u7mo70BvygSmSkj6knpg7ZgNAC', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2020-11-18 02:12:59', '2020-11-18 02:13:38', NULL);
 
 --
 -- Indexes for dumped tables
@@ -316,6 +363,18 @@ ALTER TABLE `pemesanan_kamar`
   ADD PRIMARY KEY (`pemesanan_id`);
 
 --
+-- Indexes for table `pemesanan_tiket`
+--
+ALTER TABLE `pemesanan_tiket`
+  ADD PRIMARY KEY (`tiket_id`);
+
+--
+-- Indexes for table `sewa_penjemputan`
+--
+ALTER TABLE `sewa_penjemputan`
+  ADD PRIMARY KEY (`penjemputan_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -343,7 +402,7 @@ ALTER TABLE `auth_groups`
 -- AUTO_INCREMENT for table `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `auth_permissions`
@@ -367,13 +426,25 @@ ALTER TABLE `auth_tokens`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pemesanan_kamar`
 --
 ALTER TABLE `pemesanan_kamar`
-  MODIFY `pemesanan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pemesanan_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `pemesanan_tiket`
+--
+ALTER TABLE `pemesanan_tiket`
+  MODIFY `tiket_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `sewa_penjemputan`
+--
+ALTER TABLE `sewa_penjemputan`
+  MODIFY `penjemputan_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
