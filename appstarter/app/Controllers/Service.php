@@ -24,7 +24,8 @@ class Service extends BaseController
       return view('service/index', $data);
     }
 
-    //--Pemesanan-Kamar
+
+    //------------------Pemesanan-Kamar------------------------------------------
     public function sewakamar()
     {
       $kamar = $this->pemesanankamar->findAll();
@@ -44,7 +45,7 @@ class Service extends BaseController
       return redirect()->to('/home');
     }
     
-    //--Pemesanan-Tiket-Kereta-Api
+    //------------------------Pemesanan-Tiket-Kereta-Api------------------------------
     public function pesantiket()
     {
       $tiket = $this->pemesanantiket->findAll();
@@ -67,7 +68,7 @@ class Service extends BaseController
       return redirect()->to('/service');
     }
 
-    //--Pemesanan Penjemputan-Tamu
+    //-------------------------Pemesanan Penjemputan-Tamu-------------------------------------------
     public function sewajemput()
     {
       $jemput = $this->pemesananpenjemputan->findAll();

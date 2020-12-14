@@ -19,7 +19,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="<?= base_url('/home/index') ?>">Home</a></li>
+        <li><a href="<?= base_url('/home/index') ?>">Home</a></li>
         <li><a href="<?= base_url('/about/index') ?>">about</a></li>
         <li><a href="<?= base_url('/service/index') ?>">services</a></li>
 
@@ -33,13 +33,13 @@
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
       <ul class="nav flex-column">
   <li class="nav-item">
-  <a class="dropdown-item" href="<?= base_url('profile/index') ?>">Profil</a>
+  <a class="dropdown-item" href="<?= base_url('profile/index') ?>">Profil Saya</a>
   </li>
   <li class="nav-item">
   <a class="dropdown-item" href="<?= base_url('profile/pesanan') ?>">Pesanan Saya</a>
   </li>
   <li class="nav-item">
-  <a class="dropdown-item" href="<?= base_url('/logout') ?>">Log Out</a>
+  <a class="dropdown-item" href="<?= base_url('/logout') ?>">Keluar</a>
   </li>
       </li>
           </ul>
@@ -79,8 +79,6 @@
       </div>
     </div>
   </div>
-
-
 
   <ul class="social-icon">
     <li><a href="#"><i class="ion-social-twitter"></i></a></li>
